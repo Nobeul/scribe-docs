@@ -391,7 +391,7 @@ The `apply` section of the route group is where you specify any additional setti
 ],
 ```
 
-  - The `methods` key determines what endpoints allow response calls. By default, Scribe will only try response calls for GET endpoints, but you can change this as you wish. Set it to `['*']` to mean all methods. Leave it as an empty array to turn off response calls for that route group.
+  - The `methods` key determines what endpoints will not allow response calls. By default, Scribe will only try response calls for all method types endpoints if kept empty array, but you can change this as you wish. Set it to `['GET']` to mean remove all GET methods.
 
   - The `queryParams`, `bodyParams`, and `fileParams` keys allow you to set specific data to be sent in response calls. For file parameters, each value should be a valid path (absolute or relative to your project directory) to a file on the machine.
 
